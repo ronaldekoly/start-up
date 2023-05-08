@@ -170,18 +170,23 @@
       <!-------------------- footer ------------------->
 
       <footer>
-        <p>
-          &copy; 2023 Start-Up<br />
-          <a href="#" class="link">Website Template</a> by Ronald Ekoly<br />
-          <a href="#" class="link">Responsive Templates</a> by
-          <a href="#">Ronald Ekoly</a>
-        </p>
+        <p>&copy; Copyright <span id="currentYear"></span></p>
+        <script>
+          var currentDate = new Date();
+          var currentYear = currentDate.getFullYear();
+
+          document.getElementById("currentYear").innerHTML = currentYear;
+        </script>
+        <br />
+        <p><a href="#" class="link">Website</a> by Ronald Ekoly<br /></p>
 
         <div class="social-icons">
           <span>Follow us:</span>
           <a href="http://wwww.twitter.com"><img src="images/icon-1.jpg" /></a>
-          <a href="#"><img src="images/icon-2.jpg" /></a>
-          <a href="#"><img src="images/icon-3.jpg" /></a>
+          <a href="https://web.facebook.com/"
+            ><img src="images/icon-2.jpg"
+          /></a>
+          <a href="https://www.google.com/"><img src="images/icon-3.jpg" /></a>
         </div>
       </footer>
     </main>
